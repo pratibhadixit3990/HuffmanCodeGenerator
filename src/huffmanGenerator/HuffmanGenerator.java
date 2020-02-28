@@ -11,7 +11,7 @@ public class HuffmanGenerator {
     private String userInputStringInLowerCase;
 
     public HuffmanGenerator(String userInputStringInLowerCase) {
-        this.userInputStringInLowerCase = userInputStringInLowerCase;
+        this.userInputStringInLowerCase = userInputStringInLowerCase.toLowerCase();
     }
 
     public String getUserInputStringInLowerCase() {
