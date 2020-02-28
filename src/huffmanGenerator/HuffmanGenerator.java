@@ -54,6 +54,9 @@ public class HuffmanGenerator {
         map.put('z', "1100001010");
 
         StringBuilder huffmanOfUserInputtedString = new StringBuilder();
+        for (int i = 0; i < userInputStringInLowerCase.length(); i++) {
+
+        }
         return "";
     }
 }
