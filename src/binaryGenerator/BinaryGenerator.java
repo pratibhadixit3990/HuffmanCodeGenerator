@@ -11,7 +11,7 @@ public class BinaryGenerator {
     private String userInputStringInLowerCase;
 
     public BinaryGenerator(String userInputStringInLowerCase) {
-        this.userInputStringInLowerCase = userInputStringInLowerCase;
+        this.userInputStringInLowerCase = userInputStringInLowerCase.toLowerCase();
     }
 
     public String getUserInputStringInLowerCase() {
