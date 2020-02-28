@@ -26,6 +26,12 @@ public class BinaryGenerator {
         byte[] byteOfUserInputString = userInputStringInLowerCase.getBytes();
         StringBuilder binaryOfUserInputtedString = new StringBuilder();
         for (byte byteHolder : byteOfUserInputString) {
+            int temp = byteHolder;
+            for (int i = 0; i < 8; i++) {
+                binaryOfUserInputtedString.append((temp & 128) == 0 ? 0 : 1);
+                temp <<= 1;
+            }
+            binaryOfUserInputtedString.append(' ');
         }
         return "";
     }
