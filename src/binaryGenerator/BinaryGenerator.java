@@ -25,6 +25,8 @@ public class BinaryGenerator {
     public String convertNormalStringToBinaryString() {
         byte[] byteOfUserInputString = userInputStringInLowerCase.getBytes();
         StringBuilder binaryOfUserInputtedString = new StringBuilder();
+        for (byte byteHolder : byteOfUserInputString) {
+        }
         return "";
     }
 }
