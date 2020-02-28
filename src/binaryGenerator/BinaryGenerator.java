@@ -23,6 +23,7 @@ public class BinaryGenerator {
     }
 
     public String convertNormalStringToBinaryString() {
+        byte[] byteOfUserInputString = userInputStringInLowerCase.getBytes();
         return "";
     }
 }
