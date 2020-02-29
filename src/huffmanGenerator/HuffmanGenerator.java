@@ -62,6 +62,6 @@ public class HuffmanGenerator {
                 }
             }
         }
-        return "";
+        return huffmanOfUserInputtedString.toString();
     }
 }
