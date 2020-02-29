@@ -55,7 +55,12 @@ public class HuffmanGenerator {
 
         StringBuilder huffmanOfUserInputtedString = new StringBuilder();
         for (int i = 0; i < userInputStringInLowerCase.length(); i++) {
-
+            for (Character huffmanCharacter : map.keySet()) {
+                if (userInputStringInLowerCase.charAt(i) == huffmanCharacter) {
+                    huffmanOfUserInputtedString.append(map.get(huffmanCharacter));
+                    huffmanOfUserInputtedString.append(' ');
+                }
+            }
         }
         return "";
     }
